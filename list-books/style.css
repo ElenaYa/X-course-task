@@ -1,0 +1,100 @@
+html {
+    background-image: url("imgs/paper-background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+.visual {
+    border-bottom: 2px solid beige;
+    border-top: 2px solid beige;
+    margin-left: -20px;
+}
+.visual_line {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.heading {
+    font-family: fantasy;
+    margin-top: -20px;
+    margin-bottom: -40px;
+    margin-left: 20px;
+}
+.headline_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
+}
+.items_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-right: 10px;
+    margin-bottom: -5px;
+}
+.image_item , .span_item, .button_item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.button_item > button[type="submit"] {
+    height: 30px;
+    width: 100px;
+    border-radius: 9px;
+    font: 1em sans-serif;
+    border: 1px solid black;
+    background-color: tan;
+}
+span, h3 {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: medium;
+}
+.search_field {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.search_term {
+      width: 100%;
+      border: 3px solid tan;
+      border-right: none;
+      padding: 5px;
+      height: 20px;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+}
+.search_term:focus {
+    color: tan;
+}
+.search_button {
+      width: 40px;
+      height: 36px;
+      border: 1px solid tan;
+      background: tan;
+      text-align: center;
+      color: beige;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      font-size: 20px;
+}
+.search_bar {
+      width: 30%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+main {
+    font-family: sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.footer {
+    position: fixed;
+    margin-left: 20px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}

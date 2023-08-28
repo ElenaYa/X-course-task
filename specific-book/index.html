@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Librarium</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="visual">
+            <div class="visual_line">
+                <div class="headline_container">
+                    <div class="heading">
+                        <h1>Librarium <span>/ Your full name</span></h1>
+                    </div> 
+                    <div class="items_container">
+                        <div class="image_item">
+                            <img src="imgs/shopping-cart.png" alt="shopping-cart" class="shopping-cart" width="30px" height="30px">
+                        </div>
+                        <div class="button_item">
+                             <button type="submit">Sign out</button>
+                        </div>
+                        <div class="image_item">
+                            <img src="imgs/avatar.png" alt="avatar" width="30px" height="30px">
+                        </div>
+                        <div class="span_item">
+                            <span>TestUser</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </header>
+        <main>
+            <article class="description_book_container">
+                <div class="image_book">
+                    <img src="imgs/javascript_the_definitive_guide.jpg" alt="javascript_the_definitive_guide" width="auto" height="auto">
+                </div>
+                <div class="items">
+                    <h4>"JavaScript: The Definitive Guide, 7th Edition"</h4>
+                        <p> 
+                            <b>Book author:</b>
+                            <span>David Flanagan</span>
+                        </p>
+                        <p> 
+                            <b>Book level:</b>
+                            <span>Beginner</span>
+                        </p>
+                        <p>
+                            <b>Book tags:</b>
+                            <span>"core",
+                                "frontend",
+                                "javascript"</span>
+                        </p>
+                </div>
+                <div class="price_item">
+                    <p>
+                        Price:
+                        <strong>$10.99</strong>
+                    </p>
+                        <form action="/send-form" method="post">
+                          <div>
+                            <label for="counter_books">Count</label>
+                            <input type="number" id="counter_books" name="counter_books" min="1">  
+                          </div>
+                          <p>
+                            Total:
+                            <strong>$10.99</strong>
+                        </p>
+                        <div class="button_item">
+                            <button type="submit">Add to cart</button>
+                        </div>
+                        </form> 
+                </div>
+            </article>
+                <div class="description_book_item">
+                    <h4>Description book:</h4>
+                    <p>JavaScript is the programming language of the web and is used by more software developers 
+                        today than any other programming language. For nearly 25 years this best seller has been 
+                        the go-to guide for JavaScript programmers. The seventh edition is fully updated to cover 
+                        the 2020 version of JavaScript, and new chapters cover classes, modules, iterators, generators,
+                        Promises, async/await, and metaprogramming. You’ll find illuminating and engaging example code 
+                        throughout. This book is for programmers who want to learn JavaScript and for web developers who
+                        want to take their understanding and mastery to the next level. It begins by explaining the JavaScript 
+                        language itself, in detail, from the bottom up. It then builds on that foundation to cover the web platform and Node.js.
+                    </p>
+                </div>
+        </main>
+        <footer class="footer">&copy; 2023 OlenaYatsynyuk</footer>
+    </body>

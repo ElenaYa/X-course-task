@@ -1,0 +1,81 @@
+body {
+    background-image: url("imgs/paper-background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    margin: 0;
+}
+.visual {
+    border-bottom: 2px solid beige;
+    border-top: 2px solid beige;
+}
+.visual_line {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+.page_username {
+    text-align: center;
+}
+.heading {
+    font-family: fantasy;
+    margin: 0;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.brand_name {
+    margin-right: 20px;
+}
+h1 {
+    margin: 0;
+}
+h3 {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: medium;
+    margin: 0;
+}
+.avatar_image {
+    margin-top: 20px;
+}
+button[type="submit"], input[id="username"] {
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    font: 1em sans-serif;
+    text-align: center;
+    border-radius: 9px;
+    border: 1px solid black;
+}
+button[type="submit"] {
+    background-color: tan;
+    cursor: pointer;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    margin-left: 20px;
+}
+@media screen and (max-width: 320px) {
+    button[type="submit"], input[type="text"] {
+        width: 300px;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+    .avatar {
+        width: 200px;
+        height: 200px;
+    }
+    .heading {
+        flex-flow: row wrap;
+    }
+    h1 {
+        height: 90px;
+    }
+    .visual, .visual_line, .heading {
+        height: 110px;
+    }
+}
