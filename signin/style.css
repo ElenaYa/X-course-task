@@ -1,72 +1,90 @@
+/* RESET STYLES */
+
 body {
-  background-image: url("imgs/paper-background.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.32px;
+  padding: 0;
   margin: 0;
+  background-image: url("imgs/paper-background.jpg");
+  font-family: sans-serif;
 }
-a {
-  text-decoration: none;
+
+textarea {
+  font-family: inherit;
 }
+
+input {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
   margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+/* ======================== */
+
 .container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  padding: 0 20px 0 20px;
 }
 .header {
-  border-bottom: 2px solid beige;
-  border-top: 2px solid beige;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.page_username {
+.heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.logo {
+  font-family: fantasy;
+  font-weight: 700;
+  font-size: 36px;
+}
+.username {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.page-username {
   text-align: center;
 }
-
-.brand-name {
-  color: #000000;
-  font-family: "Raleway", sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
-}
-
-.full-name {
-  font-weight: 400;
-  font-size: 14px;
-}
-h1 {
-  margin: 0;
-}
-h3 {
-  font-family: sans-serif;
-  font-weight: 500;
-  font-size: medium;
-  margin: 0;
-}
-.avatar_image {
-  margin-top: 20px;
+.avatar-image {
+  margin: 0 auto;
+  width: 160px;
+  height: 160px;
 }
 button[type="submit"],
 input[id="username"] {
@@ -87,7 +105,6 @@ button[type="submit"] {
   bottom: 0;
   width: 100%;
   height: 40px;
-  margin-left: 20px;
 }
 @media screen and (max-width: 320px) {
   button[type="submit"],
@@ -96,19 +113,9 @@ button[type="submit"] {
     margin-right: 8px;
     margin-left: 8px;
   }
-  .avatar {
+  .avatar-image {
     width: 200px;
     height: 200px;
   }
-  .heading {
-    flex-flow: row wrap;
-  }
-  h1 {
-    height: 90px;
-  }
-  .visual,
-  .visual_line,
-  .heading {
-    height: 110px;
-  }
+  
 }
