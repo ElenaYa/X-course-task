@@ -8,65 +8,43 @@
         <link href="style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-    </head>
-    <body>
-        <header class="visual">
-            <div class="visual_line">
-                <div class="headline_container">
-                    <div class="heading">
-                        <h1>Librarium <span>/ Your full name</span></h1>
-                    </div> 
-                    <div class="items_container">
-                        <div class="image_item">
-                            <img src="imgs/shopping-cart.png" alt="shopping-cart" class="shopping-cart" width="30px" height="30px">
-                        </div>
-                        <div class="button_item">
-                             <button type="submit">Sign out</button>
-                        </div>
-                        <div class="image_item">
-                            <img src="imgs/avatar.png" alt="avatar" width="30px" height="30px">
-                        </div>
-                        <div class="span_item">
-                            <span>TestUser</span>
-                        </div>
-                    </div>
-                </div>
+<hr>
+<header class="container">
+    <div class="header">
+            <div class="heading">
+                <a href="../list-books/index.html" alt="list of books"><h1 class="logo">Librarium</h1></a>
+                 <p class="username">/ Your full name</p>
             </div> 
-        </header>
-        <main>
+            <div class="items-container">
+                <div class="image-item">
+                    <img src="imgs/shopping-cart.png" alt="shopping-cart" class="shopping-cart" width="24px" height="24px">
+                </div>
+                <button type="submit" class="button-item">Sign out</button>
+                <div class="image-item">
+                    <img src="imgs/avatar.png" alt="avatar" width="30px" height="30px">
+                </div>
+                <p class="username">TestUser</p>
+            </div>
+    </div> 
+</header>
+<hr>
+        <main class="container">
              <section class="top_container">
                 <div class="search_bar">
-                    <div class="search_field">
-                        <input type="text" class="search_term" placeholder="Search by book name">
-                        <button type="submit" class="search_button">
+                    <input type="text" id="search" class="search_term" placeholder="Search by book name">
+                    <button type="submit" class="search_button">
                         <i class="fa fa-search"></i>
-                        </button>
-                    </div>
+                    </button>
                 </div>
              </section>
             <section class="book">
-                <div class="image_book">
-                    <img src="imgs/javascript_the_definitive_guide.jpg" alt="javascript_the_definitive_guide" width="auto" height="auto">
-                </div>
-                <div class="book_title">
-                    <div class="book_name">
-                        <h4>JavaScript: The Definitive Guide, 7th Edition</h4>
-                    </div>
-                    <div class="book_author">
-                        <h5>David Flanagan</h5>
-                    </div>
-                </div>
-                <div class="footer_book">
-                    <div class="price">
-                        <strong>10.99$</strong>
-                    </div>
-                    <div class="button_view">
-                        <button type="submit">View</button>
-                    </div>
-                </div>    
+                <ul class="gallery">
+
+                </ul>
+                
             </section>
         </main>
-        <footer class="footer">&copy;  2023 OlenaYatsynyuk</footer>
+        <footer class="footer container">&copy; 2024 <a href="https://github.com/ElenaYa" alt="link to github">OlenaYatsynyuk</a></footer>
+        <script src="./main.js"></script>    
     </body>
-
 </html>
