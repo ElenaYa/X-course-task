@@ -45,13 +45,13 @@ fetch('books.json')
       searchInput.addEventListener('input', function() {
           let searchQuery = this.value.toLowerCase();
 
-          document.querySelectorAll('.gallery-item').forEach(item => {
-              let title = item.querySelector('div').textContent.toLowerCase();
+          document.querySelectorAll('.title-book').forEach(item => {
+              let title = item.textContent.toLowerCase();
 
               if (title.includes(searchQuery)) {
-                  item.style.display = 'block';
+                  item.parentElement.style.display = 'block';
               } else {
-                  item.style.display = 'none';
+                  item.parentElement.style.display = 'none';
               }
           });
       });
