@@ -52,24 +52,26 @@
                         </p>
                 </div>
             </div>
-                <div class="price-item">
+            <div class="price-item">
                     <p>
-                        Price:
-                        <strong>$10.99</strong>
+                        Price: $
+                        <strong id="book_price">10.99</strong>
                     </p>
-                    <form action="/send-form" method="post">
-                        <div>
-                            <label for="counter_books">Count:</label>
-                            <input type="number" id="counter_books" name="counter_books" min="1">  
-                        </div>
-                          
-                    </form>
+                    
+                    <div class="count-box">
+                        <label for="counter_books">Count:</label>
+                        <input type="number" id="counter_books" name="counter_books" min="1" max="42" value="1">
+                      <div class="buttons-wrap">
+                        <button class="btn" id="increase">⬆</button>
+                        <button class="btn" id="decrease">⬇</button> 
+                      </div>
+                    </div>
                     <p>
-                            Total:
-                            <strong>$10.99</strong>
+                            Total: $
+                            <strong id="total_price">10.99</strong>
                     </p>  
                     <button class="button-item" type="submit">Add to cart</button>
-                </div>
+            </div>
             </article>
                 <div class="description-book">
                     <h4>Description book:</h4>
@@ -85,4 +87,5 @@
                 </div>
         </main>
         <footer class="footer container">&copy; 2024 <a href="https://github.com/ElenaYa" alt="link to github">OlenaYatsynyuk</a></footer>
+        <script src="./main.js"></script>
     </body>
